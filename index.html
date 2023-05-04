@@ -15,9 +15,12 @@ body {
   align-content: center;
   width: 100vw;
   height: 100vh;
+  flex-direction: column;
 }
-      
-      
+
+.digidan_img {
+  width: 10em;
+}
       
 .lds-ellipsis {
   display: inline-block;
@@ -80,7 +83,7 @@ body {
 </head>
 <body>
   <script>
-    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwQGz90W61IB7kKTgTpPUf-tyfyT0XFKGzsbLAskNghXsjIOISRgRpDeprkDnkORjNXDA/exec";
+    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbxmpr9PrhxFm-BDq7RZ1X6ytsxBC-m72oMHNnaJlEJ33Sm1MQsPZtcgItdbsIhMYSgYdA/exec";
     
     var url = document.location.href;
     var k = url.substr(url.lastIndexOf("k=")+2);
@@ -100,7 +103,12 @@ body {
 
   </script>
   
-<div class="content"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+<div class="content">
+  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  <div class="content_digidan">
+    <img class="digidan_img" src="digidan_powered.png" alt="digidan_logo">
+  </div>
+</div>
   
   
 </body>
