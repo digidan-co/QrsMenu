@@ -17,64 +17,20 @@ body {
   height: 100vh;
 }
 
-.digidan_img {
-  width: 10em;
+.digidan_img {width: 40vw;}
+
+.custom-loader {
+  width:240px;
+  height:40px;
+  background:
+   linear-gradient(#766DF4 0 0) left/0% 100% no-repeat
+   #E4E4ED;
+  animation:p1 7s infinite linear;
 }
-      
-.lds-ellipsis {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+@keyframes p1 {
+    100% {background-size:100% 100%}
 }
-.lds-ellipsis div {
-  position: absolute;
-  top: 33px;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #fff;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.lds-ellipsis div:nth-child(1) {
-  left: 8px;
-  animation: lds-ellipsis1 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(2) {
-  left: 8px;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(3) {
-  left: 32px;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(4) {
-  left: 56px;
-  animation: lds-ellipsis3 0.6s infinite;
-}
-@keyframes lds-ellipsis1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes lds-ellipsis3 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes lds-ellipsis2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
+
 }
   </style>
 </head>
@@ -101,7 +57,7 @@ body {
   </script>
   
 <div class="content">
-  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  <div class="custom-loader"></div>
   <div class="content_digidan">
     <img class="digidan_img" src="digidan_powered.png" alt="digidan_logo">
   </div>
